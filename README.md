@@ -1,3 +1,6 @@
 vocabexpress is a simple tool for extracting the vocabulary of a given dataset.
+Current url: http://vocab-express.nodester.com/
+
 TODO:
-- Waiting coupon from http://nodester.com
+- Upload the current version to nodester  
+
