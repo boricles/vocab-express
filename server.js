@@ -1,9 +1,9 @@
-var server = require("./lib/server");
+var init = require("./lib/init");
 var router = require("./lib/router");
 var requestHandlers = require("./lib/requestHandlers");
 
 var handle = {}
 handle["/explore"] = requestHandlers.explore;
 
-server.start(router.route, handle);
+init.start(router.route, handle);
 
