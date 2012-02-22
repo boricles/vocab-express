@@ -1,34 +1,100 @@
-<!DOCTYPE HTML>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
- 
-<title>vocab-express</title>
-<meta charst="utf-8">
-</head><body>
-<div id="container">
-  <div id="topnav">
-    <h1 id="title">Vocabulary explorer for a dataset.</h1>
-  </div>
-  <div id="content">
-    <blockquote>
-    <p>
-    vocab-express is a simple tool for extracting the vocabulary of a given dataset.
-    You only need to provide the SPARQL end point or the VOiD file description of the dataset. A few examples
-    </p>
-    <p>
-	<ul>
-		<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://sparql.data.southampton.ac.uk/">data southampton</a></li>
-		<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://data.fundacionctic.org/sparql">data fundaction ctic</a></li>
-		<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://dblp.l3s.de/d2r/sparql">data dbplp</a></li>
-	</ul>
-    </p>
-    <p>
-    The web user interface that you are looking at is made almost
-    entirely in <a href="http://nodejs.org/">nodejs</a>. The source code is
-    available <a href="https://github.com/boricles/vocab-express">here</a>.
-    </p>
-    </blockquote>
-  <div id="footer">
-  </div>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>vocab-express &#8211; vocabulary explorer for an RDF dataset</title>
+<style type="text/css">
+body { background: white; color: black; font-family: sans-serif; line-height: 1.4em; padding: 2.5em 3em; margin: 0; }
+:link { color: #00c; }
+:visited { color: #609; }
+a:link img { border: none; }
+a:visited img { border: none; }
+h1, h2, h3 { background: white; color: #800; }
+h1 { font: 300% sans-serif; margin: 0; }
+h2 { clear: both; font: 140% sans-serif; margin: 1.5em 0 -0.5em 0; }
+h3 { font: 120% sans-serif; margin: 1.5em 0 -0.5em 0; }
+h4 { font: bold 100% sans-serif; }
+h5 { font: italic 100% sans-serif; }
+h6 { font: small-caps 100% sans-serif; }
+.hide { display: none; }
+pre { background: #fff6bb; font-family: monospace; line-height: 1.2em; padding: 1em 2em; }
+dt { font-weight: bold; margin-top: 0; margin-bottom: 0; }
+dd { margin-top: 0; margin-bottom: 0; }
+code, tt { font-family: monospace; }
+ul.toc { list-style-type: none; }
+ol.toc li a { text-decoration: none; }
+.note { color: red; }
+#header { border-bottom: 1px solid #ccc; }
+#logo { float: right; }
+#authors { clear: right; float: right; font-size: 80%; text-align: right; }
+#content { clear: both; margin: 2em auto 0 0; text-align: justify }
+#download, #demo { float: left; font-family: sans-serif; margin: 1em 0 1.5em; text-align: center; width: 100%; }
+#download h2, #demo h2 { font-size: 125%; margin: 1.5em 0 -0.2em 0; }
+#download small, #demo small { color: #888; font-size: 80%; }
+#footer { border-top: 1px solid #ccc; color: #aaa; margin: 2em 0 0; }
+
+@media Print {
+* { font-size: 92%; }
+body { padding: 0; line-height: 1.2em; }
+#content { margin: 0; width: 100%; }
+}
+@media Aural {
+h1 { stress: 20; richness: 90; }
+h2 { stress: 20; richness: 90; }
+h3 { stress: 20; richness: 90; }
+.hide { speak: none; }
+dt { pause-before: 20%; }
+pre { speak-punctuation: code; }
+}
+.Stil1 {color: #FF0000}
+</style>
+</head>
+<body>
+
+<div id="logo">
+	<a href="http://www.oeg-upm.net/"><img src="img/oeg.png" alt="Ontology Engineering Group Logo" /></a>  
+	<a href="http://www.deri.ie/"><img src="img/deri.png" alt="DERI Logo" /></a>
+  
 </div>
-</body></html>
+
+<div id="header">
+  <h1>vocab-express</h1>
+  <div id="tagline">Vocabulary explorer for an RDF dataset</div>
+</div>
+
+<div id="authors">
+  <a href="http://boris.villazon.terrazas.name/">Boris Villazon-Terrazas</a><br/>
+  <a href="http://sw-app.org/mic.xhtml#i">Michael Hausenblas</a><br/>
+</div>
+
+<div id="content">
+<br/>
+<p>vocab-express is a simple tool for extracting the vocabulary of a given dataset. You only need to provide the SPARQL end point or the VOiD file description of the dataset. A few examples</p>
+<ul>
+	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://sparql.data.southampton.ac.uk/" target="_blank">data southampton</a></li>
+	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://data.fundacionctic.org/sparql" target="_blank">data fundaction ctic</a></li>
+	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://dblp.l3s.de/d2r/sparql" target="_blank">data dbplp</a></li>
+</ul>
+<p>The web user interface that you are looking at is made almost entirely in <a href="http://nodejs.org" target="_blank">nodejs</a>. The source code is available <a href="https://github.com/boricles/vocab-express" target="_blank">here</a>.</p>
+</p>
+
+
+<h2 id="news">News</h2>
+
+<ul>
+  <li><strong>2012-03-01: Version 0.0.2 released.</strong> This version provides some improvements.</li>
+  <li><strong>2011-08-27: Version 0.0.1 released.</strong> First alpha version.</li>  
+</ul>
+
+<h2><a name="support" id="support"></a>Support and feedback</h2>
+
+<p>You can contact the authors via email:<br/>
+  <a href="mailto:bvillazon at fi.upm.es">Boris Villazon-Terrazas</a><br/>
+  <a href="mailto:michael.hausenblas at deri.org">Michael Hausenblas</a><br/>
+</p>
+
+
+</div>
+
+</body>
+</html>
