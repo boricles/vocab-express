@@ -1,6 +1,6 @@
-vocab-express is being implemented in node.js\footnote{\footnotesize \url{http://nodejs.org/}}, which is a platform built on V8\footnote{\footnotesize V8 is Google's open source JavaScript engine.} for easily building fast, scalable network applications. 
+Vocab-express is being implemented in \emph{node.js}\footnote{\footnotesize \url{http://nodejs.org/}}, which is a platform built on V8\footnote{\footnotesize V8 is Google's open source JavaScript engine.} for easily building fast, scalable network applications. 
 Figure \ref{fig:workflow} depicts the workflow of vocab-express. Next we describe the steps of the workflow
-
+\vspace{-3mm}
 \begin{figure}[hbt!p]
 \begin{center}
 \includegraphics[scale=0.22]{img/workflow.eps}
@@ -9,11 +9,11 @@ Figure \ref{fig:workflow} depicts the workflow of vocab-express. Next we describ
 \caption{vocab-express workflow}
 \end{figure}
 
-
+\vspace{-2mm}
 \begin{enumerate}
-	\item The user indicates the RDF dataset he/she wants to explore by providing its SPARQL endpoint URL
-	\item vocab-express receives and validates the SPARQL endpoint URL
-	\item vocab-express queries the SPARQL endpoint and gets results in JSON\footnote{\footnotesize \url{http://www.json.org}} format
-	\item vocab-express processes the results and displays the information to the user
+	\vspace{-0.5mm}\item The user indicates the RDF dataset he/she wants to explore by providing its SPARQL endpoint URL
+	\vspace{-0.5mm}\item vocab-express receives and validates the SPARQL endpoint URL
+	\vspace{-0.5mm}\item vocab-express queries the SPARQL endpoint and gets results
+	\vspace{-0.5mm}\item vocab-express processes the results and displays the information to the user
 \end{enumerate}
-The workflow is similar if the user provides the URL of the VoID file instead of the SPARQL endpoint.
+The workflow is similar if the user provides the URL of the VoID file instead of the SPARQL endpoint URL.
