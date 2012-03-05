@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <title>vocab-express &#8211; vocabulary explorer for an RDF dataset</title>
+  <title>vocab-express &#8211; exploring the vocabulary used in a dataset</title>
 <style type="text/css">
 body { background: white; color: black; font-family: sans-serif; line-height: 1.4em; padding: 2.5em 3em; margin: 0; }
 :link { color: #00c; }
@@ -52,14 +52,14 @@ pre { speak-punctuation: code; }
 <body>
 
 <div id="logo">
-	<a href="http://www.oeg-upm.net/"><img src="img/oeg.png" alt="Ontology Engineering Group Logo" /></a>  
-	<a href="http://www.deri.ie/"><img src="img/deri.png" alt="DERI Logo" /></a>
+	<a href="http://www.oeg-upm.net/"><img src="http://mccarthy.dia.fi.upm.es/sitemap4rdf/img/oeg.png" width="73" alt="Ontology Engineering Group Logo" /></a>  
+	<a href="http://www.deri.ie/"><img src="http://mccarthy.dia.fi.upm.es/sitemap4rdf/img/deri.png" width="106" alt="DERI Logo" /></a>
   
 </div>
 
 <div id="header">
   <h1>vocab-express</h1>
-  <div id="tagline">Vocabulary explorer for an RDF dataset</div>
+  <div id="tagline">exploring the vocabulary used in a dataset</div>
 </div>
 
 <div id="authors">
@@ -69,19 +69,21 @@ pre { speak-punctuation: code; }
 
 <div id="content">
 <br/>
-<p>vocab-express is a simple tool for extracting the vocabulary of a given dataset. You only need to provide the SPARQL end point or the VOiD file description of the dataset. A few examples</p>
+<p>vocab-express is a simple tool for exploring the vocabulary used in a dataset. You only need to provide the SPARQL endpoint or the VoID file description of the dataset. A few examples</p>
 <ul>
 	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://sparql.data.southampton.ac.uk/" target="_blank">data southampton</a></li>
 	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://data.fundacionctic.org/sparql" target="_blank">data fundaction ctic</a></li>
-	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://dblp.l3s.de/d2r/sparql" target="_blank">data dbplp</a></li>
+	<!-- <li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://data-gov.ie/sparql" target="_blank">data-gov.ie</a></li> -->
+	<li><a href="http://vocab-express.nodester.com/explore?sparqlEndPoint=http://geo.linkeddata.es/sparql" target="_blank">geo.linkeddata.es</a></li>
 </ul>
-<p>The web user interface that you are looking at is made almost entirely in <a href="http://nodejs.org" target="_blank">nodejs</a>. The source code is available <a href="https://github.com/boricles/vocab-express" target="_blank">here</a>.</p>
+<p>The application is made entirely in <a href="http://nodejs.org" target="_blank">nodejs</a>. The source code is available <a href="https://github.com/boricles/vocab-express" target="_blank">here</a>.</p>
 </p>
 
 
 <h2 id="news">News</h2>
 
 <ul>
+  <li><strong>2012-03-05: Version 0.0.3 released.</strong> This version provides some improvements regarding the visualization of the information.</li>
   <li><strong>2012-03-01: Version 0.0.2 released.</strong> This version provides some improvements.</li>
   <li><strong>2011-08-27: Version 0.0.1 released.</strong> First alpha version.</li>  
 </ul>
@@ -94,6 +96,8 @@ pre { speak-punctuation: code; }
 </p>
 
 
+<h2 id="news">Limitations</h2>
+<p>Currently the application only works with SPARQL endpoints that output results in JSON format.</p>
 </div>
 
 </body>
