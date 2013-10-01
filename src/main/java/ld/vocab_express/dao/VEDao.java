@@ -4,11 +4,13 @@ import java.util.List;
 
 public interface VEDao {
 
-	List<VElement> getClasses() throws DaoException;
+	
 	List<String> getGraphs() throws DaoException;	
+	List<VElement> getClasses() throws DaoException;
+	List<VElement> getVocabs() throws DaoException;	
+	List<VElement> getStatistics() throws DaoException;
 	List<String> getProperties() throws DaoException;	
-	List<String> getInstances(String clazz) throws DaoException;	
-	List<String> getVocabs() throws DaoException;	
+	List<String> getInstances(String clazz) throws DaoException;
 	
 	void setEndPointUri(String endPointUri);
 	

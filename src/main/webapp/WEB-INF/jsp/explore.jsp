@@ -6,17 +6,13 @@
 
   <h2>Summary</h2>
   <ul>
-  	<li><h3><a href="#statistics">Statistics</a></h3></li>
+    <li><h3><a href="#graphs">Graphs</a></h3></li>
+    <li><h3><a href="#classes">Classes</a></h3></li> 
   	<li><h3><a href="#vocabularies">Vocabularies</a></h3></li>
-  	<li><h3><a href="#graphs">Graphs</a></h3></li>  	
-  	<li><h3><a href="#classes">Classes</a></h3></li>
+  	<li><h3><a href="#statistics">Statistics</a></h3></li>
   	<li><h3><a href="#properties">Properties</a></h3></li>  	  	
   </ul>
     
-  <br/><a name="statistics"/>
-
-
-  <br/><a name="vocabularies"/>
   
   <br/><a name="graphs"/>
     <table>
@@ -36,7 +32,7 @@
     		<th>Class</th>
     		<th>Number of Instances</th>
     	</tr>
-    	<c:forEach var="clazz" items="${actionBean.classes}">
+    	<c:forEach var="clazz" items="${actionBean.classes}"> <%---hacer lo mismo con vocabs --%>
     		<tr>
     			<td>${clazz.uri}</td>
     			<td>${clazz.usage}</td>
@@ -44,6 +40,33 @@
     	</c:forEach>
     </table>
 
+  <br/><a name="vocabs"/>
+    <table>
+    	<tr>
+    		<th>Vocabularies</th>
+    		<th>Usage</th>
+    	</tr>
+    	<c:forEach var="vocab" items="${actionBean.vocabs}">
+    		<tr>
+    			<td>${vocab.uri}</td>
+    			<td>${vocab.usage}</td>
+    		</tr>
+    	</c:forEach>
+    </table>
+
+  <br/><a name="statistics"/>
+      <table>
+    	<tr>
+    		<th>Statistics</th>
+    		<th>Value</th>
+    	</tr>
+    	<c:forEach var="statistic" items="${actionBean.statistics}">
+    		<tr>
+    			<td>${statistic.uri}</td>
+    			<td>${statistic.usage}</td>
+    		</tr>
+    	</c:forEach>
+    </table>
   
   <br/><a name="properties"/>        
     <table>

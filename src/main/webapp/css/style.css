@@ -6,12 +6,43 @@ html, body {
 }
 body, td, th {
   color: #000000;
-  font-family: "Luxi Sans", Arial, sans-serif;
+  font-family: Arial;
   font-size: 10pt;
+}
+table { 
+  border-spacing:0;
+  border-collapse:collapse;
+}
+td
+{
+  background-color: #F6F6F6;
+  border: 1px solid black; 
+  border-collapse:collapse;
+}
+th
+{
+  background-color: #FF6600;
+  border: 1px solid black; 
+  border-collapse:collapse;
 }
 div#main {
   padding: 8px;
 }
+a, a:link {
+  color: #000000;
+}
 a, a:visited {
-  color: #0000FF;
+  color: #666666;
+}
+h1 {
+color: #323133;
+font-family:  Arial;
+font-size: 24px;
+font-weight: bold;
+}
+h2 {
+color: #FF6600;
+font-family:  Arial;
+font-size: 18px;
+font-weight: bold;
 }

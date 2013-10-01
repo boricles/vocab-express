@@ -30,11 +30,31 @@ public class ExploreActionBean extends BaseActionBean {
 		
 		public String getSparqlEndPoint() {
 			return this.sparqlEndPoint;
-		}
+		}	
 		
 		public List<VElement> getClasses() {
 			try {
 				return vocabDao.getClasses();
+			}
+			catch (DaoException ex) {
+				ex.printStackTrace();
+			}
+			return null;
+		}
+		
+		public List<VElement> getVocabs() {
+			try {
+				return vocabDao.getVocabs();
+			}
+			catch (DaoException ex) {
+				ex.printStackTrace();
+			}
+			return null;
+		}
+		
+		public List<VElement> getStatistics() {
+			try {
+				return vocabDao.getStatistics();
 			}
 			catch (DaoException ex) {
 				ex.printStackTrace();
