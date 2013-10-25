@@ -30,6 +30,7 @@ div#main {
 }
 a, a:link {
   color: #000000;
+  text-decoration: none;
 }
 a, a:visited {
   color: #666666;
